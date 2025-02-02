@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Slideshow</title>
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <div class="night"></div>
+    <div class="slideshow-container">
+        <!-- Add your images here -->
+        <div class="mySlides fade">
+            <img src="assets/images/1.jpg" alt="Image 1">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/2.jpg" alt="Image 2">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/3.jpg" alt="Image 3">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/4.jpg" alt="Image 4">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/5.jpg" alt="Image 5">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/6.jpg" alt="Image 6">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/7.jpg" alt="Image 7">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/8.jpg" alt="Image 8">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/9.jpg" alt="Image 9">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/10.jpg" alt="Image 10">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/11.jpg" alt="Image 11">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/12.jpg" alt="Image 12">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/13.jpg" alt="Image 13">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/14.jpg" alt="Image 14">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/15.jpg" alt="Image 15">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/16.jpg" alt="Image 16">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/17.jpg" alt="Image 17">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/18.jpg" alt="Image 18">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/19.jpg" alt="Image 19">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/20.jpg" alt="Image 20">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/21.jpg" alt="Image 21">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/22.jpg" alt="Image 22">
+        </div>
+        <div class="mySlides fade">
+            <img src="assets/images/23.jpg" alt="Image 23">
+        </div>
+    </div>
+
+    <script src="c.js"></script>
+    <script>
+
+        let slideIndex = 0;
+
+        showSlides();
+
+
+        function showSlides() {
+
+            let slides = document.getElementsByClassName("mySlides");
+
+            for (let i = 0; i < slides.length; i++) {
+
+                slides[i].style.display = "none"; // Hide all slides
+
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) { slideIndex = 1 } // Reset to first slide
+
+            slides[slideIndex - 1].style.display = "flex"; // Show the current slide
+
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+
+        }
+
+    </script>
+</body>
+</html>

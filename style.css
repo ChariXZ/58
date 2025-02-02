@@ -1,0 +1,32 @@
+<style>
+    body {
+        text-align: center;
+        background-color: #ffe6f2; /* Light pink background */
+        font-family: Arial, sans-serif;
+        padding-top: 100px;
+    }
+    h1 {
+        color: #ff4d6d; /* Valentine red */
+    }
+    button {
+        font-size: 18px;
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    #yes {
+        background-color: #ff4d6d;
+        color: white;
+    }
+    #yes:hover {
+        background-color: #e63950; /* Darker red on hover */
+    }
+    #no {
+        background-color: #ccc;
+        color: black;
+        position: absolute; /* This allows movement */
+    }
+</style>
